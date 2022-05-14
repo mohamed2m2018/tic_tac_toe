@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
   header: {
     fontSize: 40,
     alignSelf: 'center',
-    marginTop: 50,
-    marginBottom: 150,
+    marginVertical: '25%',
   },
 });
