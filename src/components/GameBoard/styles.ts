@@ -4,16 +4,16 @@ const styles = StyleSheet.create({
   winnerText: {
     marginTop: 20,
     fontSize: 30,
-    color: colors?.tomato,
+    color: colors?.white,
   },
   container: {
-    marginBottom: 10,
+    marginBottom: 20,
     alignItems: 'center',
   },
   button: {
-    height: 40,
-    width: 150,
-    borderRadius: 25,
+    height: 45,
+    width: 308,
+    borderRadius: 30,
     backgroundColor: colors?.tomato,
     justifyContent: 'center',
     alignItems: 'center',
