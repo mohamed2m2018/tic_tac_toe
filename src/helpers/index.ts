@@ -1,5 +1,4 @@
-import {CellType, Row} from './../types/index';
-import {Board} from '../types';
+import {CellType, Row, Board} from './../types';
 
 const checkWin = (board: Board) => {
   const horizontalWin = checkHorizontally(board);
