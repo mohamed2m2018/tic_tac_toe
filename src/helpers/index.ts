@@ -41,7 +41,7 @@ const checkDiagonals = (board: Board) => {
   const secondDiagonal = [];
 
   for (let i = 0; i < size; i++) {
-    const firstDiagonalPattern = i + size * i;
+    const firstDiagonalPattern = i * (1 + size);
     const secondDiagonalPattern = (size - 1) * (i + 1);
     firstDiagonal?.push(flatBoard[firstDiagonalPattern]);
     secondDiagonal?.push(flatBoard[secondDiagonalPattern]);
