@@ -9,9 +9,8 @@ zustand for state management.
 # Screenshots
 
 
-![simulator_screenshot_A59B2E7C-A939-43BF-B412-D5370F48D25B](https://user-images.githubusercontent.com/33550035/168451176-ca7d5f4b-a70c-4557-a484-c1f7c27ad25c.png)
+![simulator_screenshot_135B7F47-35DA-4F7E-8DB1-08509A551AE5](https://user-images.githubusercontent.com/33550035/168451487-6553bac5-934d-4b62-92fc-dd3e444df2ef.png)
 
+![simulator_screenshot_52747767-4AEA-49FA-BD54-5C6CDCBC43A4](https://user-images.githubusercontent.com/33550035/168451488-b802f10a-cc85-4a94-a865-3590a0a9c258.png)
 
-![simulator_screenshot_B2CA1159-1FE5-4D04-B90D-F04CB845CCF6](https://user-images.githubusercontent.com/33550035/168451180-31550327-9608-4de8-8616-bb44cfe3cd93.png)
-
-![simulator_screenshot_FEB7CFBF-D193-4A57-ABF9-3230E2BEB944](https://user-images.githubusercontent.com/33550035/168451184-905595b8-74d0-41d7-967f-98e8d93f08bd.png)
+![simulator_screenshot_64BDFEC9-5B30-4284-9B54-2FEDD8E16EEF](https://user-images.githubusercontent.com/33550035/168451491-1c70b847-2781-4444-9489-a80327b16bc9.png)
