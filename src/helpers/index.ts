@@ -42,10 +42,10 @@ const checkDiagonals = (board: Board) => {
   const secondDiagonal = [];
 
   for (let i = 0; i < size; i++) {
-    /*pattern to find first diagonal item for each row
+    /*pattern to find first diagonal items for each row
      where row number is i */
     const firstDiagonalPattern = i * (1 + size);
-    /*pattern to find second diagonal item for each row
+    /*pattern to find second diagonal items for each row
      where row number is i */
     const secondDiagonalPattern = (size - 1) * (i + 1);
     //pushing the finded value for that row to the diagonals arrays
