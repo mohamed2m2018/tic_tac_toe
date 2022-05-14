@@ -1,9 +1,10 @@
 import {StyleSheet} from 'react-native';
+import colors from '../../constants/colors';
 const styles = StyleSheet.create({
   winnerText: {
     marginTop: 20,
     fontSize: 30,
-    color: 'tomato',
+    color: colors?.tomato,
   },
   container: {
     marginBottom: 10,
@@ -13,12 +14,12 @@ const styles = StyleSheet.create({
     height: 40,
     width: 150,
     borderRadius: 25,
-    backgroundColor: 'tomato',
+    backgroundColor: colors?.tomato,
     justifyContent: 'center',
     alignItems: 'center',
   },
   buttonText: {
-    color: 'white',
+    color: colors?.white,
   },
 });
 

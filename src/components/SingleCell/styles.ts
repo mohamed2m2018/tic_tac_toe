@@ -1,11 +1,12 @@
 import {StyleSheet} from 'react-native';
+import colors from '../../constants/colors';
 const styles = StyleSheet.create({
   container: {
     width: 100,
     height: 100,
-    backgroundColor: 'black',
+    backgroundColor: colors.black,
     borderWidth: 1,
-    borderColor: 'dodgerblue',
+    borderColor: colors.dodgerBlue,
     justifyContent: 'center',
     alignItems: 'center',
   },
