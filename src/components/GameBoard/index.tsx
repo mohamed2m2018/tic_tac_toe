@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {Text, Button, View} from 'react-native';
+import {Text, View, TouchableOpacity} from 'react-native';
 import checkWin from '../../helpers';
 import useBoardStore from '../../store';
 import Row from '../Row';
@@ -35,7 +35,9 @@ const GameBoard = () => {
           <Text style={styles.winnerText}>Winner is {winner}</Text>
         )}
       </View>
-      <Button title="New game" onPress={deleteEverything} />
+      <TouchableOpacity style={styles.button} onPress={deleteEverything}>
+        <Text style={styles.buttonText}>New game</Text>
+      </TouchableOpacity>
     </>
   );
 };
