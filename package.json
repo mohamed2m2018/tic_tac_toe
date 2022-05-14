@@ -10,7 +10,6 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
-    "mathjs": "^10.5.3",
     "react": "17.0.2",
     "react-native": "0.68.2",
     "zustand": "^4.0.0-rc.1"
