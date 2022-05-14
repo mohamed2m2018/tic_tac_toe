@@ -26,12 +26,12 @@ interface boardState {
 const useBoardStore = create<boardState>(set => ({
   board: createBoard(),
   setBoard: (board: Board) => set({board}),
-  latestValue: '',
+  latestValue: 'O',
   setLatestValue: (latestValue: string) => set({latestValue}),
   winner: '',
   setWinner: (winner: string) => set({winner}),
   deleteEverything: () =>
-    set({board: createBoard(), latestValue: '', winner: ''}, false),
+    set({board: createBoard(), latestValue: 'O', winner: ''}, false),
 }));
 
 export default useBoardStore;

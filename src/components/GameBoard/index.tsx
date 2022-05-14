@@ -10,12 +10,14 @@ const GameBoard = () => {
     board = [],
     winner,
     setWinner,
+    latestValue,
     deleteEverything,
   } = useBoardStore(state => ({
     board: state.board,
     winner: state.winner,
     setWinner: state.setWinner,
     deleteEverything: state.deleteEverything,
+    latestValue: state.latestValue,
   }));
 
   useEffect(() => {
@@ -25,9 +27,12 @@ const GameBoard = () => {
     }
   }, [board, setWinner, winner]);
 
+  const turn = latestValue === 'X' ? 'O' : 'X';
+
   return (
     <>
       <View style={styles.container}>
+        <Text style={styles.turn}>{!winner && `Player ${turn} turn`} </Text>
         {board?.map((item, index) => (
           <Row key={index} index={index} />
         ))}

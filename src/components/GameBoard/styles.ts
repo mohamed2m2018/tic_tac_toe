@@ -6,6 +6,11 @@ const styles = StyleSheet.create({
     fontSize: 30,
     color: colors?.white,
   },
+  turn: {
+    fontSize: 30,
+    color: colors?.white,
+    marginBottom: 15,
+  },
   container: {
     marginBottom: 20,
     alignItems: 'center',
