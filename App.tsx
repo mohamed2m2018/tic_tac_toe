@@ -17,7 +17,7 @@ export default App;
 const styles = StyleSheet.create({
   outerContainer: {
     flex: 1,
-    backgroundColor: colors?.dodgerBlue,
+    backgroundColor: colors.primary,
   },
   container: {
     alignItems: 'center',
@@ -28,5 +28,6 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     marginTop: '20%',
     marginBottom: '15%',
+    color: colors?.white,
   },
 });

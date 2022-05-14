@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     height: 100,
     backgroundColor: colors.black,
     borderWidth: 1,
-    borderColor: colors.dodgerBlue,
+    borderColor: colors.secondary,
     justifyContent: 'center',
     alignItems: 'center',
   },

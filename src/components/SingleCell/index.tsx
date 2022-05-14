@@ -32,7 +32,7 @@ const SingleCell = ({onPress, value}: Props) => {
     }
   };
 
-  const color = {color: value === 'X' ? colors?.plum : colors?.peru};
+  const color = {color: value === 'X' ? colors.whiteShade : colors?.peru};
   return (
     <TouchableOpacity onPress={handlePress} style={styles.container}>
       <Text style={[styles.text, color]}>{value}</Text>
