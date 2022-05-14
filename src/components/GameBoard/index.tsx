@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {Text, Button} from 'react-native';
+import {Text, Button, View} from 'react-native';
 import checkWin from '../../helpers';
 import useBoardStore from '../../store';
 import Row from '../Row';
@@ -27,13 +27,14 @@ const GameBoard = () => {
 
   return (
     <>
-      {board?.map((item, index) => (
-        <Row key={index} index={index} />
-      ))}
-      {Boolean(winner) && (
-        <Text style={styles.winnerText}>Winner is {winner}</Text>
-      )}
-      <Button title="Reset" onPress={deleteEverything} />
+      <View style={styles.container}>
+        {board?.map((item, index) => (
+          <Row key={index} index={index} />
+        ))}
+        {Boolean(winner) && (
+          <Text style={styles.winnerText}>Winner is {winner}</Text>
+        )}
+      </View>
       <Button title="New game" onPress={deleteEverything} />
     </>
   );

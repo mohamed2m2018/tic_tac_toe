@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, TouchableOpacity} from 'react-native';
+import {Alert, Text, TouchableOpacity} from 'react-native';
 import useBoardStore from '../../store';
 import {CellType} from '../../types';
 import styles from './styles';
@@ -10,11 +10,21 @@ interface Props {
 }
 
 const SingleCell = ({onPress, value}: Props) => {
-  const {latestValue} = useBoardStore(state => ({
+  const {latestValue, winner, deleteEverything} = useBoardStore(state => ({
     latestValue: state.latestValue,
+    winner: state.winner,
+    deleteEverything: state.deleteEverything,
   }));
 
   const handlePress = () => {
+    if (winner) {
+      return Alert.alert('Game is Finished', 'Press Restart to start again', [
+        {
+          onPress: deleteEverything,
+          text: 'Restart',
+        },
+      ]);
+    }
     if (!value) {
       const nextValue = latestValue === 'X' ? 'O' : 'X';
       onPress?.(nextValue);
