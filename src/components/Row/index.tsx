@@ -26,17 +26,14 @@ const Row = ({index}: Props) => {
       newBoard[index][rowIndex] = value;
       setBoard?.(newBoard);
     };
-    const row = [];
-    for (let i = 0; i < board.length; i++) {
-      row.push(
-        <SingleCell
-          key={i}
-          value={board[index][i]}
-          onPress={value => handlePress(value, i)}
-        />,
-      );
-    }
-    return row;
+
+    return board?.map((item, i) => (
+      <SingleCell
+        key={i + Math.random()}
+        value={board[index][i]}
+        onPress={value => handlePress(value, i)}
+      />
+    ));
   }, [board, index, setBoard, setLatestValue]);
 
   return <View style={styles.container}>{createRow()}</View>;
