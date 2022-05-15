@@ -27,7 +27,7 @@ const Row = ({index}: Props) => {
       setBoard?.(newBoard);
     };
     const row = [];
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < board.length; i++) {
       row.push(
         <SingleCell
           key={i}
