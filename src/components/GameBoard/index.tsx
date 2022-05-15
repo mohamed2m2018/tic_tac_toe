@@ -34,7 +34,7 @@ const GameBoard = () => {
       <View style={styles.container}>
         <Text style={styles.turn}>{!winner && `Player ${turn} turn`} </Text>
         {board?.map((item, index) => (
-          <Row key={index} index={index} />
+          <Row key={index + Math?.random()} index={index} />
         ))}
         {Boolean(winner) && (
           <Text style={styles.winnerText}>Winner is {winner}</Text>
